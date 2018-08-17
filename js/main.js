@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$('.navbar-toggle').click(function(){
+		$('.nav').toggleClass('active');
+		$('.overlay-dark').toggleClass('active');
+	});
+	$('.overlay-dark').click(function(){
+		$('*').removeClass('active');
+	});
+});
