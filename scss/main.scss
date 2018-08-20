@@ -86,6 +86,12 @@ ul{
 /*---------- GLOBALS ----------*/
 
 
+.page-wrapper{
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+
 
 /*---------- HEADER ----------*/
 .header{
@@ -319,6 +325,16 @@ section#results{
 }
 
 
+@media (min-width: $sm) and (max-width: $md){
+	.result-card{
+
+		.image-area{
+			height: 80vh !important;
+		}
+	}
+}
+
+
 @media screen and (max-width: $md){
 
 .overlay-dark{
@@ -423,16 +439,19 @@ section#results{
 			.image-area{
 				position: relative !important;
 				width: 100% !important;
-				height: 70vh !important;
+				height: auto;
 				margin: auto !important;
 			}
 			.result-content{
+				margin: 0 !important;
 				h3{
 					text-align: center;
+					margin: 5px 0;
 				}
 				.result-desc{
 					width: 90% !important;
 					margin: 1em auto !important;
+					font-size: 12px !important;
 				}
 			}
 			.result-price{
@@ -441,6 +460,7 @@ section#results{
 				span.price{
 					display: block;
 					text-align: center !important;
+					font-size: 28pt !important;
 				}
 			}
 		}

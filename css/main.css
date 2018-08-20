@@ -66,6 +66,11 @@ ul {
   z-index: 1025; }
 
 /*---------- GLOBALS ----------*/
+.page-wrapper {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden; }
+
 /*---------- HEADER ----------*/
 .header {
   min-height: 70px;
@@ -210,6 +215,9 @@ section#results .showmore-area {
       height: auto; }
 
   /*---------- RESULTS ----------*/ }
+@media (min-width: 576px) and (max-width: 768px) {
+  .result-card .image-area {
+    height: 80vh !important; } }
 @media screen and (max-width: 768px) {
   .overlay-dark.active {
     display: block; }
@@ -271,18 +279,23 @@ section#results .showmore-area {
     #results .results .result-card .image-area {
       position: relative !important;
       width: 100% !important;
-      height: 70vh !important;
+      height: auto;
       margin: auto !important; }
-    #results .results .result-card .result-content h3 {
-      text-align: center; }
-    #results .results .result-card .result-content .result-desc {
-      width: 90% !important;
-      margin: 1em auto !important; }
+    #results .results .result-card .result-content {
+      margin: 0 !important; }
+      #results .results .result-card .result-content h3 {
+        text-align: center;
+        margin: 5px 0; }
+      #results .results .result-card .result-content .result-desc {
+        width: 90% !important;
+        margin: 1em auto !important;
+        font-size: 12px !important; }
     #results .results .result-card .result-price {
       margin: auto; }
       #results .results .result-card .result-price span.price {
         display: block;
-        text-align: center !important; }
+        text-align: center !important;
+        font-size: 28pt !important; }
 
   /*RESULTS*/ }
 @media screen and (max-width: 576px) {
