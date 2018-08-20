@@ -65,6 +65,9 @@ ul {
   background: rgba(0, 0, 0, 0.5);
   z-index: 1025; }
 
+.mobile-only {
+  display: none; }
+
 /*---------- GLOBALS ----------*/
 .page-wrapper {
   width: 100%;
@@ -219,6 +222,9 @@ section#results .showmore-area {
   .result-card .image-area {
     height: 80vh !important; } }
 @media screen and (max-width: 768px) {
+  .mobile-only {
+    display: block; }
+
   .overlay-dark.active {
     display: block; }
 
@@ -241,7 +247,8 @@ section#results .showmore-area {
       transform: translateX(0%);
       visibility: visible; }
     .header .nav ul.nav-list {
-      padding: 0 !important; }
+      padding: 0 !important;
+      margin: 0 !important; }
       .header .nav ul.nav-list li.nav-item {
         display: block !important;
         padding: 10px 0; }
@@ -252,6 +259,38 @@ section#results .showmore-area {
         .header .nav ul.nav-list li.nav-item a {
           padding: 10px 20px;
           color: #3f4c6b; }
+      .header .nav ul.nav-list li.nav-item-profile.mobile-only.profile {
+        display: block;
+        margin: auto auto 5px auto;
+        padding: 10px;
+        border-left: 3px solid #00d2ff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px -8px rgba(0, 0, 0, 0.5); }
+        .header .nav ul.nav-list li.nav-item-profile.mobile-only.profile div.image-area {
+          width: 70px;
+          height: 70px;
+          margin: auto;
+          border-radius: 50%;
+          overflow: hidden; }
+          .header .nav ul.nav-list li.nav-item-profile.mobile-only.profile div.image-area img {
+            width: 70px;
+            height: auto; }
+        .header .nav ul.nav-list li.nav-item-profile.mobile-only.profile div.info-area {
+          width: 100%;
+          position: relative;
+          top: 15px;
+          display: flex;
+          margin-bottom: 15px;
+          margin: auto auto 15px auto;
+          text-align: center;
+          justify-content: center; }
+          .header .nav ul.nav-list li.nav-item-profile.mobile-only.profile div.info-area a {
+            padding: 5px 10px; }
+            .header .nav ul.nav-list li.nav-item-profile.mobile-only.profile div.info-area a span {
+              font-size: 16pt;
+              color: rgba(0, 0, 0, 0.5); }
+              .header .nav ul.nav-list li.nav-item-profile.mobile-only.profile div.info-area a span:hover {
+                color: #3f4c6b; }
   .header .navbar-toggle {
     display: block;
     cursor: pointer; }
@@ -303,6 +342,9 @@ section#results .showmore-area {
   h1.brand {
     font-size: 20pt; }
 
+  .header nav.nav.active {
+    width: 60% !important; }
+
   /*HEADER*/
   /*SHOWCASE*/
   #showcase {
@@ -321,6 +363,35 @@ section#results .showmore-area {
         width: 100%; }
 
   /*SHOWCASE*/ }
+@media (max-width: 300px) {
+  .header nav.nav.right {
+    width: 75% !important; }
+    .header nav.nav.right ul.nav-list li.nav-item-profile .info-area a span.fa {
+      font-size: 13pt !important; }
+
+  /*SHOWCASE*/
+  #showcase .presentation h2.heading {
+    font-size: 19px !important; }
+  #showcase .form-area form.form .input-area input {
+    font-size: 14px !important; }
+  #showcase .form-area form.form .input-area.btn button {
+    font-size: 14px !important; }
+
+  /*SHOWCASE*/
+  /*RESULTS*/
+  #results h2.heading {
+    font-size: 24pt !important; }
+  #results .results .result-card h3 {
+    font-size: 18pt !important; }
+  #results .results .result-card .result-price span.price {
+    font-size: 24pt !important; }
+
+  /*RESULTS*/
+  /*SHOWMORE AREA*/
+  .showmore-area button#showmore {
+    font-size: 14px !important; }
+
+  /*SHOWMORE AREA*/ }
 /*---------- MEDIA QUERIES ----------*/
 
 /*# sourceMappingURL=main.css.map */
