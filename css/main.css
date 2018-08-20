@@ -225,11 +225,13 @@ section#results .showmore-area {
     z-index: 1030;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     transition: ease-in .3s;
-    transform: translateX(100%); }
+    transform: translateX(120%);
+    visibility: hidden; }
     .header .nav.active {
       display: block !important;
       transition: ease-in .3s;
-      transform: translateX(0%); }
+      transform: translateX(0%);
+      visibility: visible; }
     .header .nav ul.nav-list {
       padding: 0 !important; }
       .header .nav ul.nav-list li.nav-item {
